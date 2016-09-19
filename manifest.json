@@ -1,0 +1,27 @@
+{
+  "name": "Nightingale",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "A dark book, a truly dark book, is one where there is no light at the end of the tunnel. Where things start off going bad and carry on getting badder before they get worse and then it's all over.",
+  "icons": {"48": "nightingale-icon.png",
+          "128": "nightingale-icon-128.png" },
+  "browser_action": {
+    "default_icon": "nightingale-icon.png",
+    "default_popup": "control.html",
+    "default_title": "Nightingale JS test recorder"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+     "tabs",
+     "background",
+     "http://*/*"
+  ],
+  "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["recorder.js"]
+  }],
+  "offline_enabled": true,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}

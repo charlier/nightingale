@@ -1,0 +1,24 @@
+body {
+  font-family: 'Source Sans Pro',sans-serif;
+  letter-spacing: -5px;
+  font-weight: 200;
+  color: #FF7F2B;
+  background: #000;
+  margin: 0px;
+}
+
+input {
+  background: none;
+  cursor: pointer;
+  color: #bbb;
+  padding: 10px 0px 5px;
+  margin: 0 10px;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid transparent;
+}
+
+input:hover {
+  color: #FF7F2B;
+  border-bottom: 1px solid #ff7f2b;
+}
